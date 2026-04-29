@@ -1,15 +1,15 @@
 {
   "MegaCraft": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 8,
+    "players": 20,
     "playernames": [],
     "max": 300,
     "version": "1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x, 26.1.x",
     "motd": "The Mega Craft Network  |   Hello there! BENDING     \u2582\u2585\u2582      SURVIVAL     \u2582\u2585\u2582      ARENAS"
   },
   "AvatarMC": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 7,
     "playernames": [
@@ -17,40 +17,40 @@
       "filip_21377",
       "HabibiFifik",
       "Juliandebski313",
-      "Torronto_",
-      "x_Papaj2137_x",
-      "zafok_"
+      "koko_2118",
+      "kokplll123",
+      "_pxtryx_"
     ],
     "max": 100,
     "version": "1.21.4",
     "motd": "             \u1d00\u1d20\u1d00\u1d1b\u1d00\u0280\u1d0d\u1d04.\u1d18\u029f | 1.21.4+   \ud83c\udf0a \u1d21\u1d0f\u1d05\u1d00 | \ud83e\udea8 \u1d22\u026a\u1d07\u1d0d\u026a\u1d00 | \ud83d\udd25 \u1d0f\u0262\u026a\u1d07\u0274 | \ud83d\udca8 \u1d18\u1d0f\u1d21\u026a\u1d07\u1d1b\u0280\u1d22\u1d07"
   },
   "ElementalMC": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 0,
     "playernames": [],
     "max": 500,
-    "version": "Come back in: 261:01:09",
+    "version": "Come back in: 259:28:10",
     "motd": "      Currently under maintenance       Join our Discord for updates!"
   },
   "SnickerzCraft": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Avatarverse": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 11,
+    "players": 12,
     "playernames": [],
     "max": 200,
     "version": "1.7.2-1.21.11",
     "motd": "      \u2742   The Avatarverse welcomes you...  \u2742     \u6c34     RPG    \u571f    Bending    \u706b    Nations    \u6c14 "
   },
   "Four Nations": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 1,
     "playernames": [],
@@ -59,7 +59,7 @@
     "motd": "      Four Nations 2.0 - An Avatar Server  Professions \u2022 Bending \u2022 Builds \u2022 Custom Mobs &amp; Items"
   },
   "EtherealCraft": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 0,
     "playernames": [],
@@ -68,16 +68,16 @@
     "motd": "     ----[--- EtherealCraft [1.21.11] ---]----                   \u262f Master the Four Elements \u262f"
   },
   "BendersMC": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 389,
+    "players": 445,
     "playernames": [],
     "max": 1200,
     "version": "1.21-26.1",
     "motd": "    FOUR ELEMENTS MINECRAFT SERVER           \u029c\u1d1b\u1d1b\u1d18\ua731://\u1d05\u026a\ua731\u1d04\u1d0f\u0280\u1d05.\u0262\u0262/\u0299\u1d07\u0274\u1d05\u1d07\u0280\ua731\u1d0d\u1d04"
   },
   "CraftLords": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 0,
     "playernames": [],
@@ -86,40 +86,42 @@
     "motd": "        ---------&lt; Craftlords &gt;---------      Vampires &gt;&gt; Werewolves &gt;&gt; Magic &gt;&gt; Slimefun Hover: #- |- #  ------------------------------ #  VERSION &gt;&gt; 1.19 #  ONLINE &gt;&gt; 0/100 #  WEBSITE &gt;&gt; www.craftlords.com #  DISCORD &gt;&gt; www.discord.gg/DjaQNFA   #  ------------------------------"
   },
   "StarWorksMC": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 3,
+    "players": 2,
     "playernames": [],
     "max": 10000,
     "version": "1.7.x-26.1.x",
-    "motd": "               \u272f    StarWorksMC    \u272f             Very fancy \u279d \u279d Join Now!"
+    "motd": "               \u272f    StarWorksMC    \u272f           Really fancy \u279d \u279d Join Now!"
   },
   "SkyMata.Games": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 3,
+    "players": 5,
     "playernames": [],
     "max": 1000,
     "version": "1.7.2-26.1.2",
     "motd": "discord.gg/skymata  SURVIVAL RESET - PACK YOUR VAULTS"
   },
   "DoodCraft": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 0,
-    "playernames": [],
+    "players": 1,
+    "playernames": [
+      "Dooder07"
+    ],
     "max": 100,
     "version": "1.7.2-26.1.1",
     "motd": "  DoodCraft.net  Feedback wanted! New SMP in open beta! Get the RP on Discord."
   },
   "United Elements SMP": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "The Last Block Bender": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 0,
     "playernames": [],
@@ -128,7 +130,7 @@
     "motd": "               THE LAST BLOCKBENDER          \u272f Birthday Fair \u272f Bending \u272f Survival \u272f Creative \u272f"
   },
   "BendingMC": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 0,
     "playernames": [],
@@ -137,83 +139,84 @@
     "motd": "BendingMC - [ 1.20+] BENDING \u25aa TOWNY \u25aa ARENA"
   },
   "Bending Haven": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
     "players": 0,
     "playernames": [],
     "max": 100,
     "version": "1.8.x-1.21.x",
-    "motd": "---------\u00bb :::: Bending Haven :::: \u00ab---------               Welcome player! : [1.9-1.21.4]"
+    "motd": "---------\u00bb :::: Bending Haven :::: \u00ab---------               Welcome player! : [1.8-1.21.4]"
   },
   "OtherlandMc": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Bendcraft": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "ElementCraft": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 845,
+    "players": 871,
     "playernames": [],
     "max": 2000,
     "version": "NullCordX ",
     "motd": "    \u26a1 \uff25\uff2c\uff25\uff2d\uff25\uff2e\uff34\uff23\uff32\uff21\uff26\uff34 (\uff11.\uff11\uff16.\uff15 - \uff11.\uff12\uff11.\uff14) \u26a1    \u21aa \u0412\u042b\u0411\u0415\u0420\u0418 \u0421\u0412\u041e\u042e \u0421\u0422\u0418\u0425\u0418\u042e | \u0412\u042b\u0416\u0418\u0412\u0410\u041d\u0418\u0415 \u0421 \u041c\u0410\u0413\u0418\u0415\u0419 \u21a9"
   },
   "Avatach": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "\u0410\u0432\u0430\u0442\u0430\u0440\u0443\u0441": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 63,
+    "players": 57,
     "playernames": [],
     "max": 2025,
     "version": "\u041d\u0430\u0448 \u0441\u0430\u0439\u0442: shop.avatarus.fun",
     "motd": "             \u0410\u0432\u0430\u0442\u0430\u0440\u0443\u0441 - \u0441\u0435\u0440\u0432\u0435\u0440 \u0441 \u043c\u0430\u0433\u0438\u0435\u0439!            \u0412\u043e\u0434\u0430 \u2726 \u0417\u0435\u043c\u043b\u044f \u2726 \u041e\u0433\u043e\u043d\u044c \u2726 \u0412\u043e\u0437\u0434\u0443\u0445"
   },
   "GenjiWorld": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Padbenders": {
-    "time": 1777476363075,
-    "online": false,
+    "time": 1777481942465,
+    "online": true,
     "players": 0,
-    "playernames": []
+    "playernames": [],
+    "max": 0,
+    "version": "\u26a0 Error",
+    "motd": "Server not found. powered by exaroton.com"
   },
   "Avatar IL": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Avatar Stories": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Elementrix": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": true,
-    "players": 5,
+    "players": 3,
     "playernames": [
       "coolguy345134",
-      "SageethIsNoob",
-      "Serene",
-      "strokedXD",
+      "CymongUsYT",
       "WE1RD4456x"
     ],
     "max": 200,
@@ -221,13 +224,13 @@
     "motd": "Elementrix (1.16x-1.21x)            \ua730\u1d0f\u1d1c\u0280 \u1d07\u029f\u1d07\u1d0d\u1d07\u0274\u1d1b\ua731 \u1d0d\u026a\u0274\u1d07\u1d04\u0280\u1d00\ua730\u1d1b \ua731\u1d07\u0280\u1d20\u1d07\u0280"
   },
   "KorraMC": {
-    "time": 1777476363075,
+    "time": 1777481942465,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "_total": {
-    "time": 1777476363075,
-    "players": 1335
+    "time": 1777481942465,
+    "players": 1424
   }
 }
