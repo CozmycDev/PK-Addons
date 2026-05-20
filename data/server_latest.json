@@ -1,174 +1,168 @@
 {
   "MegaCraft": {
-    "time": 1779230935603,
-    "online": true,
-    "players": 14,
-    "playernames": [],
-    "max": 300,
-    "version": "1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x, 26.1.x",
-    "motd": "The Mega Craft Network  |   Hello there! BENDING     \u2582\u2585\u2582      SURVIVAL     \u2582\u2585\u2582      ARENAS"
+    "time": 1779235119152,
+    "online": false,
+    "players": 0,
+    "playernames": []
   },
   "AvatarMC": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "ElementalMC": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "SnickerzCraft": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Avatarverse": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Four Nations": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "EtherealCraft": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "BendersMC": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "CraftLords": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "StarWorksMC": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "SkyMata.Games": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "DoodCraft": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "United Elements SMP": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "The Last Block Bender": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "BendingMC": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Bending Haven": {
-    "time": 1779230935603,
-    "online": true,
+    "time": 1779235119152,
+    "online": false,
     "players": 0,
-    "playernames": [],
-    "max": 100,
-    "version": "1.8.x-1.21.x",
-    "motd": "---------\u00bb :::: Bending Haven :::: \u00ab---------               Welcome player! : [1.8-1.21.4]"
+    "playernames": []
   },
   "OtherlandMc": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Bendcraft": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "ElementCraft": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Avatach": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "\u0410\u0432\u0430\u0442\u0430\u0440\u0443\u0441": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "GenjiWorld": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Padbenders": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Avatar IL": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Avatar Stories": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "Elementrix": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "KorraMC": {
-    "time": 1779230935603,
+    "time": 1779235119152,
     "online": false,
     "players": 0,
     "playernames": []
   },
   "_total": {
-    "time": 1779230935603,
-    "players": 14
+    "time": 1779235119152,
+    "players": 0
   }
 }
