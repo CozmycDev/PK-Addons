@@ -214,5 +214,13 @@
         "bedrock_port": "19132",
         "discord_invite": "https://discord.gg/dVnEAUqmgS",
         "languages": ""
+    },
+    {
+        "name": "Element Royale",
+        "ip": "ElementRoyale.xyz",
+        "tags": "Competitive / PvP / Battle Royale / Survival Games",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/2CSGvscb35",
+        "languages": "en"
     }
 ]
