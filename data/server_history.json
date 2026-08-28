@@ -1,37 +1,29 @@
 {
   "MegaCraft": [
     {
-      "time": 1787776145313,
-      "players": 8
-    },
-    {
-      "time": 1787788758965,
-      "players": 12
-    },
-    {
       "time": 1787820243122,
       "players": 9
     },
     {
       "time": 1787858173013,
       "players": 21
+    },
+    {
+      "time": 1787888298368,
+      "players": 5
     }
   ],
   "ElementalMC": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
     {
       "time": 1787820243122,
       "players": 2
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
@@ -363,31 +355,19 @@
   ],
   "SnickerzCraft": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
       "players": 0
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "Avatarverse": [
-    {
-      "time": 1787776145313,
-      "players": 32
-    },
-    {
-      "time": 1787788758965,
-      "players": 36
-    },
     {
       "time": 1787820243122,
       "players": 2
@@ -395,17 +375,13 @@
     {
       "time": 1787858173013,
       "players": 39
+    },
+    {
+      "time": 1787888298368,
+      "players": 28
     }
   ],
   "Four Nations": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
     {
       "time": 1787820243122,
       "players": 0
@@ -413,17 +389,13 @@
     {
       "time": 1787858173013,
       "players": 0
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "EtherealCraft": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 2
-    },
     {
       "time": 1787820243122,
       "players": 0
@@ -431,6 +403,10 @@
     {
       "time": 1787858173013,
       "players": 1
+    },
+    {
+      "time": 1787888298368,
+      "players": 3
     }
   ],
   "SpiritWorld": [
@@ -761,37 +737,29 @@
   ],
   "BendersMC": [
     {
-      "time": 1787776145313,
-      "players": 338
-    },
-    {
-      "time": 1787788758965,
-      "players": 314
-    },
-    {
       "time": 1787820243122,
       "players": 248
     },
     {
       "time": 1787858173013,
       "players": 329
+    },
+    {
+      "time": 1787888298368,
+      "players": 238
     }
   ],
   "CraftLords": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
     {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
@@ -1449,31 +1417,19 @@
   ],
   "StarWorksMC": [
     {
-      "time": 1787776145313,
-      "players": 12
-    },
-    {
-      "time": 1787788758965,
-      "players": 19
-    },
-    {
       "time": 1787820243122,
       "players": 16
     },
     {
       "time": 1787858173013,
       "players": 17
+    },
+    {
+      "time": 1787888298368,
+      "players": 3
     }
   ],
   "SkyMata.Games": [
-    {
-      "time": 1787776145313,
-      "players": 17
-    },
-    {
-      "time": 1787788758965,
-      "players": 22
-    },
     {
       "time": 1787820243122,
       "players": 12
@@ -1481,23 +1437,23 @@
     {
       "time": 1787858173013,
       "players": 24
+    },
+    {
+      "time": 1787888298368,
+      "players": 26
     }
   ],
   "DoodCraft": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
     {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
@@ -1829,73 +1785,57 @@
   ],
   "United Elements SMP": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "The Last Block Bender": [
     {
-      "time": 1787776145313,
-      "players": 1
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 1
     },
     {
       "time": 1787858173013,
       "players": 1
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "BendingMC": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 2
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
       "players": 2
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "Bending Haven": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
@@ -2553,37 +2493,29 @@
   ],
   "OtherlandMc": [
     {
-      "time": 1787776145313,
-      "players": 2
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 1
     },
     {
       "time": 1787858173013,
       "players": 1
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "KorraMC": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
@@ -2915,67 +2847,47 @@
   ],
   "Bendcraft": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "ElementCraft": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "Avatach": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
       "players": 0
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "AvatarMC": [
-    {
-      "time": 1787776145313,
-      "players": 5
-    },
-    {
-      "time": 1787788758965,
-      "players": 4
-    },
     {
       "time": 1787820243122,
       "players": 3
@@ -2983,17 +2895,13 @@
     {
       "time": 1787858173013,
       "players": 9
+    },
+    {
+      "time": 1787888298368,
+      "players": 1
     }
   ],
   "\u0410\u0432\u0430\u0442\u0430\u0440\u0443\u0441": [
-    {
-      "time": 1787776145313,
-      "players": 15
-    },
-    {
-      "time": 1787788758965,
-      "players": 6
-    },
     {
       "time": 1787820243122,
       "players": 8
@@ -3001,53 +2909,41 @@
     {
       "time": 1787858173013,
       "players": 24
+    },
+    {
+      "time": 1787888298368,
+      "players": 6
     }
   ],
   "GenjiWorld": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
     {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "Padbenders": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
       "players": 0
+    },
+    {
+      "time": 1787888298368,
+      "players": 0
     }
   ],
   "_total": [
-    {
-      "time": 1787776145313,
-      "players": 430
-    },
-    {
-      "time": 1787788758965,
-      "players": 417
-    },
     {
       "time": 1787820243122,
       "players": 302
@@ -3055,77 +2951,65 @@
     {
       "time": 1787858173013,
       "players": 468
+    },
+    {
+      "time": 1787888298368,
+      "players": 310
     }
   ],
   "Avatar IL": [
-    {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
     {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "Avatar Stories": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "Elementrix": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ],
   "Element Royale": [
     {
-      "time": 1787776145313,
-      "players": 0
-    },
-    {
-      "time": 1787788758965,
-      "players": 0
-    },
-    {
       "time": 1787820243122,
       "players": 0
     },
     {
       "time": 1787858173013,
+      "players": 0
+    },
+    {
+      "time": 1787888298368,
       "players": 0
     }
   ]
