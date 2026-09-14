@@ -1,364 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="Cozmyc">
-<meta name="twitter:title" content="ProjectKorra Servers Catalogue">
-<meta name="twitter:description" content="Welcome to the unofficial catalogue of servers running ProjectKorra. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
-<meta name="twitter:url" content="https://github.com/CozmycDev/PK-Addons/servers.html">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/CozmycDev/PK-Addons/refs/heads/main/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="Cozmyc">
+  <meta name="twitter:title" content="ProjectKorra Servers Catalogue">
+  <meta name="twitter:description"
+    content="Welcome to the unofficial catalogue of servers running ProjectKorra. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
+  <meta name="twitter:url" content="https://github.com/CozmycDev/PK-Addons/servers.html">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/CozmycDev/PK-Addons/refs/heads/main/icon.png">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ProjectKorra Servers Catalogue">
-<meta property="og:description" content="Welcome to the unofficial catalogue of servers running ProjectKorra. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
-<meta property="og:url" content="https://github.com/CozmycDev/PK-Addons/servers.html">
-<meta property="og:image" content="https://raw.githubusercontent.com/CozmycDev/PK-Addons/refs/heads/main/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ProjectKorra Servers Catalogue">
+  <meta property="og:description"
+    content="Welcome to the unofficial catalogue of servers running ProjectKorra. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
+  <meta property="og:url" content="https://github.com/CozmycDev/PK-Addons/servers.html">
+  <meta property="og:image" content="https://raw.githubusercontent.com/CozmycDev/PK-Addons/refs/heads/main/icon.png">
 
-<title>ProjectKorra Servers</title>
+  <title>ProjectKorra Servers</title>
 
-<link id="theme-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/flatly/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link id="theme-stylesheet" rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<style>
-select.theme-select { color:#fff; background:#2c2c2c; border:1px solid #6c757d; padding:5px; margin-right:10px; }
-select.theme-select option { color:#000; background:#fff; }
-#servers-table { width:100% !important; }
-@media (max-width: 992px) {
-  .navbar-collapse .dropdown-menu { position: static !important; float: none; }
-}
-.small-badge {
-  font-size: 0.7em;
-  padding: 0.15em 0.4em;
-}
-.nav-logo {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-}
-</style>
-  
+  <style>
+    select.theme-select {
+      color: #fff;
+      background: #2c2c2c;
+      border: 1px solid #6c757d;
+      padding: 5px;
+      margin-right: 10px;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js" defer></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-<script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js" defer></script>
-<script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js" defer></script>
+    select.theme-select option {
+      color: #000;
+      background: #fff;
+    }
 
-<script defer>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.dropdown-toggle').forEach(el => {
-    new bootstrap.Dropdown(el, { autoClose: true });
-  });
-});
+    #servers-table {
+      width: 100% !important;
+    }
 
-const themes = ["cerulean","cosmo","cyborg","darkly","flatly","journal","litera","lumen","lux","materia","minty","morph","pulse","quartz","sandstone","simplex","sketchy","slate","solar","spacelab","superhero","united","vapor","yeti","zephyr"];
-let table, totalChart;
-const sparklineCharts = [];
-
-function applyTheme(theme){
-  document.getElementById('theme-stylesheet').href =
-    `https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/${theme}/bootstrap.min.css`;
-  localStorage.setItem('pk-theme', theme);
-}
-
-function applyDarkMode(enabled){
-  document.body.classList.toggle('bg-dark', enabled);
-  document.body.classList.toggle('text-white', enabled);
-  const tableEl = document.getElementById('servers-table');
-  tableEl.classList.toggle('table-dark', enabled);
-  tableEl.classList.toggle('table-light', !enabled);
-  localStorage.setItem('pk-dark', enabled ? '1' : '0');
-  const colors = getSparklineColors();
-  if(totalChart){
-    totalChart.data.datasets[0].borderColor = colors.border;
-    totalChart.data.datasets[0].backgroundColor = colors.background;
-    totalChart.update();
-  }
-  sparklineCharts.forEach(c => {
-    c.data.datasets[0].borderColor = colors.border;
-    c.data.datasets[0].backgroundColor = colors.background;
-    c.update();
-  });
-}
-
-function getSparklineColors(){
-  const dark = document.body.classList.contains('bg-dark');
-  return {
-    border: dark ? '#4bc0c0' : '#007bff',
-    background: dark ? 'rgba(75,192,192,0.1)' : 'rgba(0,123,255,0.2)'
-  };
-}
-
-function fixCanvasResolution(canvas, width, height) {
-  const dpr = window.devicePixelRatio || 1;
-  canvas.style.width = width + "px";
-  canvas.style.height = height + "px";
-  canvas.width = width * dpr;
-  canvas.height = height * dpr;
-  return canvas.getContext("2d");
-}
-
-function computeActivityScore(history, maxPlayers, totalPlayersOnline){
-  if(!history || history.length === 0) return 0.0;
-
-  const values = history.map(d => Number(d.players));
-  const latest = values[values.length-1];
-
-  if(values.every(v => v === 0)) return 0.0;
-
-  const mean = values.reduce((a,b)=>a+b,0)/values.length;
-  const stddev = Math.sqrt(values.reduce((s,v)=>s+Math.pow(v-mean,2),0)/values.length) || 1;
-
-  let z = (latest - mean) / stddev;
-  const normalizedZ = (Math.max(-2, Math.min(2, z)) + 2) / 4;
-  const share = latest / Math.max(totalPlayersOnline, 1);
-
-  let score = 0.7 * normalizedZ + 0.3 * share;
-
-  if(score < 0.1 && latest > 0) score = 0.1;
-
-  return score;
-}
-
-document.addEventListener("DOMContentLoaded", async function() {
-  const selector = document.getElementById('theme-selector');
-  themes.forEach(t => {
-    const opt = document.createElement('option');
-    opt.value=t;
-    opt.textContent=t.charAt(0).toUpperCase()+t.slice(1);
-    selector.appendChild(opt);
-  });
-
-  const storedTheme = localStorage.getItem('pk-theme') || 'flatly';
-  const darkMode = localStorage.getItem('pk-dark') === '1';
-  selector.value = storedTheme;
-  applyTheme(storedTheme);
-  applyDarkMode(darkMode);
-  document.getElementById('dark-toggle').innerHTML =
-    darkMode ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-
-  selector.addEventListener('change', e => applyTheme(e.target.value));
-  document.getElementById('dark-toggle').addEventListener('click', () => {
-    const enabled = !document.body.classList.contains('bg-dark');
-    applyDarkMode(enabled);
-    document.getElementById('dark-toggle').innerHTML =
-      enabled ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-    table?.draw();
-  });
-
-  const serversUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/servers.json";
-  const latestUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/data/server_latest.json";
-  const historyUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/data/server_history.json";
-
-  table = $('#servers-table').DataTable({
-    order: [[9, 'desc']],
-    columnDefs: [
-      { targets: [0,5,8], orderable: true },
-      { targets: '_all', orderable: false },
-      { targets: [9], visible: false },
-      { targets: [5], type: 'num' },
-      { targets: [8], orderData: [9] }
-    ]
-  });
-
-  try {
-    const [servers, latest, historyRaw] = await Promise.all([
-      fetch(serversUrl).then(r=>r.json()),
-      fetch(latestUrl).then(r=>r.json()),
-      fetch(historyUrl+"?t="+Date.now()).then(r=>r.json())
-    ]);
-
-    const totalPlayers = latest["_total"]?.players || 0;
-    document.getElementById('total-players').textContent = totalPlayers;
-
-    servers.forEach(server=>{
-      const latestData = latest[server.name] || {};
-      const discordLink = server.discord_invite
-        ? `<a href="${server.discord_invite}" target="_blank">Join <i class="fa-brands fa-discord"></i></a>`
-        : '<i class="fas fa-question-circle"></i>';
-      const bedrockPort = server.bedrock_port
-        ? `<i class="fas fa-check-circle"></i> ${server.bedrock_port}`
-        : '<i class="fas fa-times"></i>';
-      const ipCell = server.ip
-        ? `<span class="copy-ip" data-ip="${server.ip}" style="cursor:pointer;">${server.ip} <i class="fas fa-clipboard"></i></span>`
-        : '<i class="fas fa-question-circle"></i>';
-
-      const playerNames = (latestData.playernames||[]).join(", ");
-      const playerCount = Number(latestData.players ?? 0);
-      const playerCell = playerNames
-        ? `<span data-bs-toggle="tooltip" title="${playerNames}">${playerCount}</span>`
-        : playerCount;
-
-      let score = 0;
-      if(historyRaw[server.name]){
-        score = computeActivityScore(historyRaw[server.name], latestData.max, totalPlayers);
+    @media (max-width: 992px) {
+      .navbar-collapse .dropdown-menu {
+        position: static !important;
+        float: none;
       }
+    }
 
-      const row = table.row.add([
-        server.name,
-        ipCell,
-        discordLink,
-        bedrockPort,
-        latestData.motd||'<i class="fas fa-question-circle"></i>',
-        playerCell,
-        latestData.max??"N/A",
-        latestData.version??'<i class="fas fa-question-circle"></i>',
-        `<div class="sparkline-container"><canvas class="sparkline"></canvas><div class="activity-score text-muted small">activity score: ${score.toFixed(2)}</div></div>`,
-        score.toFixed(4)
-      ]).draw(false).node();
+    .small-badge {
+      font-size: 0.7em;
+      padding: 0.15em 0.4em;
+    }
 
-      const canvas = row.querySelector('canvas.sparkline');
-      if(canvas && historyRaw[server.name]){
-        const ctx = fixCanvasResolution(canvas, 120, 40);
-        const rawSeries = historyRaw[server.name].map(d => ({
-          x: new Date(Number(d.time)), y: Number(d.players)
-        }));
-        const colors = getSparklineColors();
-        sparklineCharts.push(new Chart(ctx, {
-          type: "line",
-          data: {
-            datasets: [{
-              label: "Online",
-              data: rawSeries,
-              borderColor: colors.border,
-              backgroundColor: colors.background,
-              pointRadius: 1,
-              pointHitRadius: 10,
-              tension: 0.3,
-              borderWidth: 1,
-              fill: true
-            }]
-          },
-          options: {
-            responsive: false,
-            interaction: { mode: 'nearest', intersect: false },
-            plugins: {
-              legend: { display: false },
-              tooltip: {
-                bodyFont: { size: 8 },
-                titleFont: { size: 8 },
-                padding: 4,
-                callbacks: {
-                  label: ctx => `${ctx.parsed.y} players online`
-                }
-              }
-            },
-            scales: {
-              x: { type: 'time', time: { unit: 'hour' }, display: false },
-              y: { beginAtZero: true, display: false }
-            }
-          }
-        }));
-      }
+    .nav-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      padding: 4px 14px;
+      border-radius: 4px;
+      border: 1px solid #6c757d;
+      background: #fff;
+      color: #212529;
+      z-index: 1050;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+
+    body.bg-dark #toast {
+      background: #343a40;
+      color: #fff;
+      border-color: #495057;
+    }
+  </style>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js" defer></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"
+    defer></script>
+
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.dropdown-toggle').forEach(el => {
+        new bootstrap.Dropdown(el, { autoClose: true });
+      });
     });
+    let toast;
+    const themes = ["cerulean", "cosmo", "cyborg", "darkly", "flatly", "journal", "litera", "lumen", "lux", "materia", "minty", "morph", "pulse", "quartz", "sandstone", "simplex", "sketchy", "slate", "solar", "spacelab", "superhero", "united", "vapor", "yeti", "zephyr"];
+    let table, totalChart;
+    const sparklineCharts = [];
 
-    const totalCanvas = document.getElementById("total-sparkline");
-    if (totalCanvas && historyRaw["_total"]) {
-      const ctx = fixCanvasResolution(totalCanvas, 420, 120);
-      const rawSeries = historyRaw["_total"].map(d => ({
-        x: new Date(Number(d.time)), y: Number(d.players)
-      }));
+    function applyTheme(theme) {
+      document.getElementById('theme-stylesheet').href =
+        `https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/${theme}/bootstrap.min.css`;
+      localStorage.setItem('pk-theme', theme);
+    }
+
+    function applyDarkMode(enabled) {
+      document.body.classList.toggle('bg-dark', enabled);
+      document.body.classList.toggle('text-white', enabled);
+      const tableEl = document.getElementById('servers-table');
+      tableEl.classList.toggle('table-dark', enabled);
+      tableEl.classList.toggle('table-light', !enabled);
+      localStorage.setItem('pk-dark', enabled ? '1' : '0');
       const colors = getSparklineColors();
-      totalChart = new Chart(ctx, {
-        type: "line",
-        data: { datasets: [{ data: rawSeries, borderColor: colors.border, backgroundColor: colors.background, pointRadius:1, pointHitRadius:10, tension:0.4, fill:true }] },
-        options: {
-          responsive: false,
-          interaction: { mode: 'nearest', intersect: false },
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              bodyFont: { size: 8 },
-              titleFont: { size: 8 },
-              padding: 4,
-              callbacks: { label: ctx => `${ctx.parsed.y} players online` }
-            }
-          },
-          scales: { x:{type:'time', time:{unit:'hour'}, display:false}, y:{beginAtZero:true, display:false} }
-        }
+      if (totalChart) {
+        totalChart.data.datasets[0].borderColor = colors.border;
+        totalChart.data.datasets[0].backgroundColor = colors.background;
+        totalChart.update();
+      }
+      sparklineCharts.forEach(c => {
+        c.data.datasets[0].borderColor = colors.border;
+        c.data.datasets[0].backgroundColor = colors.background;
+        c.update();
       });
     }
 
-    const tooltipTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    );
-    tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+    let toastTimer;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      if (!toast) return;
 
-    $('#servers-table tbody').on('click','.copy-ip',function(){
-      const ip=$(this).data('ip');
-      navigator.clipboard.writeText(ip)
-        .then(()=>alert(`IP address ${ip} copied!`))
-        .catch(console.error);
+      clearTimeout(toastTimer);
+
+      toast.textContent = message;
+      toast.classList.add('show');
+
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+
+    function getSparklineColors() {
+      const dark = document.body.classList.contains('bg-dark');
+      return {
+        border: dark ? '#4bc0c0' : '#007bff',
+        background: dark ? 'rgba(75,192,192,0.1)' : 'rgba(0,123,255,0.2)'
+      };
+    }
+
+    function fixCanvasResolution(canvas, width, height) {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.style.width = width + "px";
+      canvas.style.height = height + "px";
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      return canvas.getContext("2d");
+    }
+
+    function computeActivityScore(history, maxPlayers, totalPlayersOnline) {
+      if (!history || history.length === 0) return 0.0;
+
+      const values = history.map(d => Number(d.players));
+      const latest = values[values.length - 1];
+
+      if (values.every(v => v === 0)) return 0.0;
+
+      const mean = values.reduce((a, b) => a + b, 0) / values.length;
+      const stddev = Math.sqrt(values.reduce((s, v) => s + Math.pow(v - mean, 2), 0) / values.length) || 1;
+
+      let z = (latest - mean) / stddev;
+      const normalizedZ = (Math.max(-2, Math.min(2, z)) + 2) / 4;
+      const share = latest / Math.max(totalPlayersOnline, 1);
+
+      let score = 0.7 * normalizedZ + 0.3 * share;
+
+      if (score < 0.1 && latest > 0) score = 0.1;
+
+      return score;
+    }
+
+    document.addEventListener("DOMContentLoaded", async function () {
+
+      const selector = document.getElementById('theme-selector');
+      themes.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t.charAt(0).toUpperCase() + t.slice(1);
+        selector.appendChild(opt);
+      });
+
+      const storedTheme = localStorage.getItem('pk-theme') || 'flatly';
+      const darkMode = localStorage.getItem('pk-dark') === '1';
+      selector.value = storedTheme;
+      applyTheme(storedTheme);
+      applyDarkMode(darkMode);
+      document.getElementById('dark-toggle').innerHTML =
+        darkMode ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+
+      selector.addEventListener('change', e => applyTheme(e.target.value));
+      document.getElementById('dark-toggle').addEventListener('click', () => {
+        const enabled = !document.body.classList.contains('bg-dark');
+        applyDarkMode(enabled);
+        document.getElementById('dark-toggle').innerHTML =
+          enabled ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+        table?.draw();
+      });
+
+      const serversUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/servers.json";
+      const latestUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/data/server_latest.json";
+      const historyUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/data/server_history.json";
+
+      table = $('#servers-table').DataTable({
+        order: [[9, 'desc']],
+        columnDefs: [
+          { targets: [0, 5, 8], orderable: true },
+          { targets: '_all', orderable: false },
+          { targets: [9], visible: false },
+          { targets: [5], type: 'num' },
+          { targets: [8], orderData: [9] }
+        ]
+      });
+
+      try {
+        const [servers, latest, historyRaw] = await Promise.all([
+          fetch(serversUrl).then(r => r.json()),
+          fetch(latestUrl).then(r => r.json()),
+          fetch(historyUrl + "?t=" + Date.now()).then(r => r.json())
+        ]);
+
+        const totalPlayers = latest["_total"]?.players || 0;
+        document.getElementById('total-players').textContent = totalPlayers;
+
+        servers.forEach(server => {
+          const latestData = latest[server.name] || {};
+          const discordLink = server.discord_invite
+            ? `<a href="${server.discord_invite}" target="_blank">Join <i class="fa-brands fa-discord"></i></a>`
+            : '<i class="fas fa-question-circle"></i>';
+          const bedrockPort = server.bedrock_port
+            ? `<i class="fas fa-check-circle"></i> ${server.bedrock_port}`
+            : '<i class="fas fa-times"></i>';
+          const ipCell = server.ip
+            ? `<span class="copy-ip" data-ip="${server.ip}" style="cursor:pointer;">${server.ip} <i class="fas fa-clipboard"></i></span>`
+            : '<i class="fas fa-question-circle"></i>';
+
+          const playerNames = (latestData.playernames || []).join(", ");
+          const playerCount = Number(latestData.players ?? 0);
+          const playerCell = playerNames
+            ? `<span data-bs-toggle="tooltip" title="${playerNames}">${playerCount}</span>`
+            : playerCount;
+
+          let score = 0;
+          if (historyRaw[server.name]) {
+            score = computeActivityScore(historyRaw[server.name], latestData.max, totalPlayers);
+          }
+
+          const row = table.row.add([
+            server.name,
+            ipCell,
+            discordLink,
+            bedrockPort,
+            latestData.motd || '<i class="fas fa-question-circle"></i>',
+            playerCell,
+            latestData.max ?? "N/A",
+            latestData.version ?? '<i class="fas fa-question-circle"></i>',
+            `<div class="sparkline-container"><canvas class="sparkline"></canvas><div class="activity-score text-muted small">activity score: ${score.toFixed(2)}</div></div>`,
+            score.toFixed(4)
+          ]).draw(false).node();
+
+          const canvas = row.querySelector('canvas.sparkline');
+          if (canvas && historyRaw[server.name]) {
+            const ctx = fixCanvasResolution(canvas, 120, 40);
+            const rawSeries = historyRaw[server.name].map(d => ({
+              x: new Date(Number(d.time)), y: Number(d.players)
+            }));
+            const colors = getSparklineColors();
+            sparklineCharts.push(new Chart(ctx, {
+              type: "line",
+              data: {
+                datasets: [{
+                  label: "Online",
+                  data: rawSeries,
+                  borderColor: colors.border,
+                  backgroundColor: colors.background,
+                  pointRadius: 1,
+                  pointHitRadius: 10,
+                  tension: 0.3,
+                  borderWidth: 1,
+                  fill: true
+                }]
+              },
+              options: {
+                responsive: false,
+                interaction: { mode: 'nearest', intersect: false },
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    bodyFont: { size: 8 },
+                    titleFont: { size: 8 },
+                    padding: 4,
+                    callbacks: {
+                      label: ctx => `${ctx.parsed.y} players online`
+                    }
+                  }
+                },
+                scales: {
+                  x: { type: 'time', time: { unit: 'hour' }, display: false },
+                  y: { beginAtZero: true, display: false }
+                }
+              }
+            }));
+          }
+        });
+
+        const totalCanvas = document.getElementById("total-sparkline");
+        if (totalCanvas && historyRaw["_total"]) {
+          const ctx = fixCanvasResolution(totalCanvas, 420, 120);
+          const rawSeries = historyRaw["_total"].map(d => ({
+            x: new Date(Number(d.time)), y: Number(d.players)
+          }));
+          const colors = getSparklineColors();
+          totalChart = new Chart(ctx, {
+            type: "line",
+            data: { datasets: [{ data: rawSeries, borderColor: colors.border, backgroundColor: colors.background, pointRadius: 1, pointHitRadius: 10, tension: 0.4, fill: true }] },
+            options: {
+              responsive: false,
+              interaction: { mode: 'nearest', intersect: false },
+              plugins: {
+                legend: { display: false },
+                tooltip: {
+                  bodyFont: { size: 8 },
+                  titleFont: { size: 8 },
+                  padding: 4,
+                  callbacks: { label: ctx => `${ctx.parsed.y} players online` }
+                }
+              },
+              scales: { x: { type: 'time', time: { unit: 'hour' }, display: false }, y: { beginAtZero: true, display: false } }
+            }
+          });
+        }
+
+        const tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+
+        $('#servers-table tbody').on('click', '.copy-ip', function () {
+          const ip = $(this).data('ip');
+          navigator.clipboard.writeText(ip)
+            .then(() => {
+              showToast("IP Copied!");
+            })
+            .catch(console.error);
+        });
+
+      } catch (e) {
+        console.error("Failed to load server data", e);
+      }
     });
-
-  } catch(e){
-    console.error("Failed to load server data", e);
-  }
-});
-</script>
+  </script>
 
 </head>
 
 
 <body>
-  
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="https://raw.githubusercontent.com/CozmycDev/PK-Addons/refs/heads/main/icon.png" alt="PK-Addons" class="nav-logo"></a>
-    <div class="d-flex" id="navbarNav">
-      <ul class="navbar-nav me-auto d-flex flex-row">
-        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Addons</a><span class="badge bg-danger ms-1 small-badge">NEW!</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-        <li class="nav-item"><a class="nav-link active" href="servers.html">Servers</a><span class="badge bg-danger ms-1 small-badge">NEW!</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-      </ul>
 
-      <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown">
-            <i class="fas fa-gear"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="themeDropdown">
-            <li><select id="theme-selector" class="form-select mb-2"></select></li>
-            <li class="text-center"><button id="dark-toggle" class="btn btn-outline-dark w-100"><i class="fas fa-moon"></i> Toggle Dark</button></li>
-          </ul>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img
+          src="https://raw.githubusercontent.com/CozmycDev/PK-Addons/refs/heads/main/icon.png" alt="PK-Addons"
+          class="nav-logo"></a>
+      <div class="d-flex" id="navbarNav">
+        <ul class="navbar-nav me-auto d-flex flex-row">
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Addons</a><span
+              class="badge bg-danger ms-1 small-badge">NEW!</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li class="nav-item"><a class="nav-link active" href="servers.html">Servers</a><span
+              class="badge bg-danger ms-1 small-badge">NEW!</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-gear"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="themeDropdown">
+              <li><select id="theme-selector" class="form-select mb-2"></select></li>
+              <li class="text-center"><button id="dark-toggle" class="btn btn-outline-dark w-100"><i
+                    class="fas fa-moon"></i> Toggle Dark</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <h1 class="text-center mb-2">ProjectKorra Servers</h1>
+    <p class="text-center mb-2">Playing ProjectKorra now: <span id="total-players">0</span></p>
+    <div class="d-flex justify-content-center">
+      <canvas id="total-sparkline"></canvas>
+    </div>
+
+    <div class="table-responsive mt-4">
+      <table id="servers-table" class="table table-dark table-striped table-bordered text-white">
+        <thead class="bg-secondary">
+          <tr>
+            <th>Name</th>
+            <th>IP</th>
+            <th>Discord</th>
+            <th>Bedrock Port</th>
+            <th>MOTD</th>
+            <th>Online Players</th>
+            <th>Max Players</th>
+            <th>Supported Version(s)</th>
+            <th>Activity (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="servers-table-body"></tbody>
+      </table>
     </div>
   </div>
-</nav>
 
-<div class="container my-4">
-  <h1 class="text-center mb-2">ProjectKorra Servers</h1>
-  <p class="text-center mb-2">Playing ProjectKorra now: <span id="total-players">0</span></p>
-  <div class="d-flex justify-content-center">
-      <canvas id="total-sparkline"></canvas>
+  <div class="text-center mt-4 mb-4">
+    <p>
+      This site is not owned or operated by ProjectKorra.<br> Activity scores are only an approximation and may not be
+      accurate.<br> If you would like to add, remove, or update a server, feel free to open a PR or issue on <a
+        href="https://github.com/CozmycDev/PK-Addons">the repo</a>.<br>Legend: <i
+        class="fas fa-question-circle"></i>=Unknown, <i class="fa-solid fa-x"></i>=Offline/Not Applicable<br>Last
+      Updated: Sep 2, 2025
+    </p>
   </div>
-
-  <div class="table-responsive mt-4">
-    <table id="servers-table" class="table table-dark table-striped table-bordered text-white">
-      <thead class="bg-secondary">
-        <tr>
-          <th>Name</th><th>IP</th><th>Discord</th><th>Bedrock Port</th>
-          <th>MOTD</th><th>Online Players</th><th>Max Players</th><th>Supported Version(s)</th><th>Activity (24h)</th>
-        </tr>
-      </thead>
-      <tbody id="servers-table-body"></tbody>
-    </table>
-  </div>
-</div>
-
-<div class="text-center mt-4 mb-4">
-  <p>
-    This site is not owned or operated by ProjectKorra.<br> Activity scores are only an approximation and may not be accurate.<br> If you would like to add, remove, or update a server, feel free to open a PR or issue on <a href="https://github.com/CozmycDev/PK-Addons">the repo</a>.<br>Legend: <i class="fas fa-question-circle"></i>=Unknown, <i class="fa-solid fa-x"></i>=Offline/Not Applicable<br>Last Updated: Sep 2, 2025
-  </p>
-</div>
-  
+  <div id="toast"></div>
 </body>
+
 </html>
